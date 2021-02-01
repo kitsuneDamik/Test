@@ -11,7 +11,14 @@ namespace ExamMsp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
+            ShowRandomNumber();
             Console.ReadLine();
+        }
+
+        static void ShowRandomNumber()
+        {
+            Random rand = new Random();
+            Console.WriteLine(rand.Next());
         }
     }
 }
